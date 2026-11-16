@@ -1,0 +1,27 @@
+# Core deep learning stack.
+# torchtext has to match the torch build, for example torch==1.13.1 with
+# torchtext==0.14.1. Newer torch releases no longer ship a compatible torchtext,
+# and torchtext is used for the GloVe table in gen_concept_features.py.
+torch
+torchtext
+numpy
+
+# Text and vision backbones.
+transformers
+Pillow
+opencv-python
+imageio
+nltk
+
+# CLIP global and patch features, used by lib/encoders.py and by the two
+# feature-generation scripts.
+open-clip-torch
+
+# Numerics and logging.
+scipy
+tqdm
+tensorboard-logger
+
+# Figures in visualize_concept_graph.py.
+matplotlib
+networkx
